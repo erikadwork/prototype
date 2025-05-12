@@ -1,0 +1,119 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>The Beauty Of A Mystery</title>
+    <link rel="stylesheet" href="style.css">
+  
+  
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="site-nav">
+        <img src="images/logo.png" alt="Site Logo" class="site-logo">
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="trade.html">Trade</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+
+      <br><br>
+
+     <!-- ▾▾ inside your <body> where the old slideshow sat ▾▾ -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="images/carousel1.jpg" alt="slide 1">
+    <div class="text">Caption One</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="images/carousel2.jpg" alt="slide 2">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="images/carousel3.jpg" alt="slide 3">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="images/carousel4.jpg" alt="slide 4">
+    <div class="text">Caption Four</div>
+  </div>
+
+</div>
+
+<!-- dots -->
+<div class="dots-wrap">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>   <!-- NEW 4th dot -->
+</div>
+
+<script>
+  
+  
+let slideIndex = 1;        // start on the first slide
+showSlides(slideIndex);
+
+/* user clicks a dot */
+function currentSlide(n) { showSlides(slideIndex = n); }
+
+/* auto-advance */
+setInterval(() => showSlides(++slideIndex), 5000);  // 5-second cadence
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("mySlides");
+  const dots   = document.getElementsByClassName("dot");
+
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1)             { slideIndex = slides.length; }
+
+  Array.from(slides).forEach(s => s.style.display = "none");
+  Array.from(dots).forEach(d => d.classList.remove("active"));
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+}
+</script>
+
+      <br><br>
+      
+
+<br><br>
+        <h2> Top Collectibles </h2>
+        <div class="grid-container">
+          <!-- Top row images: positioned in columns 1, 3, and 5 -->
+          <figure class="top-image image1">
+            <img src="images/gallery1.jpg" alt="Image 1">
+            <figcaption>Caption for Image 1</figcaption>
+          </figure>
+          <figure class="top-image image2">
+            <img src="images/gallery2.jpg" alt="Image 2">
+            <figcaption>Caption for Image 2</figcaption>
+          </figure>
+          <figure class="top-image image3">
+            <img src="images/gallery3.jpg" alt="Image 3">
+            <figcaption>Caption for Image 3</figcaption>
+          </figure>
+        
+          <!-- Bottom row images: positioned in columns 2 and 4 -->
+          <figure class="bottom-image image4">
+            <img src="images/gallery4.jpg" alt="Image 4">
+            <figcaption>Caption for Image 4</figcaption>
+          </figure>
+          <figure class="bottom-image image5">
+            <img src="images/gallery5.jpg" alt="Image 5">
+            <figcaption>Caption for Image 5</figcaption>
+          </figure>
+        </div>
+
+        <h2> New Releases </h2>

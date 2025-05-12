@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 18px;             
+    font-family: 'Georgia','Arial',sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #c5cecd;
+    color: #333;
+  }
+  
+  .wrapper {
+    background-color: #fff;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  p, section, article {
+    text-align: left;
+    font-size: 18px;             
+  }
+  
+  .site-nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #646d65;
+  }
+  
+  
+  .site-nav .site-logo {
+    flex: 0 0 auto;
+    max-height: 70px;
+    width: auto;
+  }
+  
+  
+  .site-nav nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;  
+    gap: 2rem;                 
+  }
+  
+  
+  .site-nav nav a {
+    color: #fffeff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .site-nav nav a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .sitenav a {
+    color: #fffeff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;              
+    margin: 0 10px;
+  }
+  
+  .sitenav a:hover {
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3 {
+    color: #4d534e;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  h1 {
+    font-size: 24px;               
+  }
+  
+  h2 {
+    font-size: 22px;              
+  }
+  
+  h3 {
+    font-size: 20px;               
+  }
+  
+  .lead-section {
+    padding: 20px;
+  }
+  
+  .primary-statement {
+    text-align: center;
+    font-size: 18px;               
+    margin-bottom: 1rem;
+  }
+  
+  .lead-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .lead-text {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  
+  .secondary-statement {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .intro-text {
+    line-height: 1.5;
+  }
+  
+  .showcase-heading {
+    text-align: center;
+    font-size: 20px;              
+    margin-bottom: 20px;
+    color: #4c4853;
+  }
+  
+  .showcase {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 2200px;
+    padding: 0 20px;
+  }
+  
+  .showcase-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #cbcac6;
+    border-radius: 20px;
+    flex: 1 1 400px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .showcase-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  
+  .showcase-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .showcase-item h3 {
+    margin: 15px 0;
+    font-size: 20px;             
+  }
+  
+  .showcase-item p {
+    font-size: 18px;              
+  }
+  
+  .learn-more {
+    margin-top: auto;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #7f8a85;
+    color: #fffeff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;               
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more:hover {
+    background-color: #4c5a59;
+  }
+  
+  footer {
+    background-color: #343735;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 5rem;
+    font-size: 18px;               
+  }
+  
+  
+  .wrap-image {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 1000px;
+  }
+  
+  
+  .clear {
+    clear: both;
+  }
+  
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    padding: 20px;
+  }
+  
+  .top-image.image1 { grid-column: 1 / 2; grid-row: 1; }
+  .top-image.image2 { grid-column: 3 / 4; grid-row: 1; }
+  .top-image.image3 { grid-column: 5 / 6; grid-row: 1; }
+  
+  .bottom-image.image4 { grid-column: 2 / 3; grid-row: 2; }
+  .bottom-image.image5 { grid-column: 4 / 5; grid-row: 2; }
+  
+  .grid-container figure {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .grid-container img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .grid-container figcaption {
+    margin-top: 8px;
+    font-size: 18px;               
+    color: #555;
+  }
+  
+  * {box-sizing:border-box}
+  
+  .slideshow-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;                 /* keeps the banner tidy */
+  }
+  
+  /* every slide */
+  .mySlides {
+    display: none;
+  }
+  
+  .mySlides img {
+    width: 100%;
+    height: 500px;                    /* ► banner height ◄ */
+    object-fit: cover;                /* crop top / bottom */
+    border-radius: 0.75rem;           /* optional rounding */
+  }
+  
+  
+  .text, .numbertext {
+    position: absolute;
+    color: #f2f2f2;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .text        { bottom: 6px;  width: 100%; text-align: center; }
+  .numbertext  { top: 0; }
+  
+  
+  .dots-wrap   { text-align: center; margin-top: 8px; }
+  .dot {
+    height: 12px; width: 12px; margin: 0 4px;
+    background: #bbb; border-radius: 50%; display: inline-block;
+    cursor: pointer; transition: background 0.4s;
+  }
+  .active, .dot:hover { background: #717171; }
+  
+  
+  .fade { animation: fade 1.0s ease; }
+  @keyframes fade { from {opacity: .35} to {opacity: 1} }
+  
+  
+  
+  .trade-img {
+    display: block;          /* lets margin-auto work */
+    max-width: 100%;         /* responsive width */
+    height: auto;            /* keep aspect ratio */
+    margin: 0 auto;          /* horizontally centers the block */
+    border-radius: 1rem;     /* rounded corners (≈16 px); use 50% for a circle */
+  }
+  
+  
+  /* ── trading board grid ─────────────────────────── */
+  .trade-board {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-block: 3rem;
+  }
+  
+  /* ── individual card ────────────────────────────── */
+  .trade-item {
+    padding: 1.25rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,.06);
+  }
+  
+  .trade-item h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+  }
+  
+  /* image */
+  .trade-item img {
+    width: 100%;
+    height: 180px;                /* shorter, banner-style */
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* “looking for” line */
+  .trade-item .want {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* poster */
+  .trade-item .poster {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* button */
+  .trade-btn {
+    padding: 0.5rem 1.25rem;
+    background: #5e6a65;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.25s;
+  }
+  
+  .trade-btn:hover {
+    background: #47504d;
+  }
+  
+  /* floating button */
+  .fab {
+    position: fixed;
+    bottom: 2rem; right: 2rem;
+    width: 3.5rem; height: 3.5rem;
+    border: none; border-radius: 50%;
+    background: #5e6a65; color:#fff;
+    font-size: 2rem; line-height: 0;
+    cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,.25);
+    transition: background .25s;
+  }
+  .fab:hover { background:#47504d; }
+  
+  /* modal backdrop */
+  .modal {
+    position: fixed; inset: 0;
+    display: grid; place-items: center;
+    background: rgba(0,0,0,.55);
+    visibility: hidden; opacity: 0;
+    transition: opacity .3s;
+  }
+  /* show when .open is added */
+  .modal.open { visibility: visible; opacity: 1; }
+  
+  /* modal box */
+  .modal-box {
+    width: 90%; max-width: 420px;
+    background:#fff; padding:1.5rem;
+    border-radius: 1rem;
+  }
+  .modal-box label { display:block; margin:.75rem 0; font-size:.9rem; }
+  .modal-box input[type="text"],
+  .modal-box input[type="file"]{ width:100%; margin-top:.25rem; }
+  
+  .modal-actions{ display:flex; gap:.75rem; justify-content:flex-end; margin-top:1rem;}
+  .modal-actions .submit{ background:#5e6a65; color:#fff; border:none; padding:.5rem 1rem; border-radius:.5rem; cursor:pointer;}
+  .modal-actions .cancel{ background:none; border:none; cursor:pointer;}
+  
+  
+  /* entire block */
+  .team {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding-inline: 1rem;
+  }
+  
+  .team h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* one line per member */
+  .team-member {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;          /* space between photo and text */
+    margin-bottom: 2rem;
+  }
+  
+  /* photo */
+  .team-member img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;   /* circle avatar */
+    flex-shrink: 0;       /* never let it squash */
+  }
+  
+  /* text */
+  .team-member h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  .team-member .role {
+    margin: .25rem 0 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* mobile: stack vertically */
+  @media (max-width: 600px) {
+    .team-member {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

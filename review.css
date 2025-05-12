@@ -1,0 +1,128 @@
+/* review.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 18px;                    /* matches your 18–24px scale */
+    font-family: Georgia, Arial, sans-serif;
+    line-height: 1.6;
+    background: #c5cecd;
+    color: #333;
+  }
+  
+  .wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .site-nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #646d65;
+  }
+  
+  
+  .site-nav .site-logo {
+    flex: 0 0 auto;
+    max-height: 70px;
+    width: auto;
+  }
+  
+  
+  .site-nav nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;  
+    gap: 2rem;                 
+  }
+  
+  
+  .site-nav nav a {
+    color: #fffeff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .site-nav nav a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .sitenav a {
+    color: #fffeff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;              
+    margin: 0 10px;
+  }
+  
+  .sitenav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ——— Headings & Text ——— */
+  h1 {
+    font-size: 24px;
+    color: #4d534e;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  h2 {
+    font-size: 22px;
+    color: #4d534e;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #4d534e;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  p {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  /* ——— Figures ——— */
+  figure {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  
+  figcaption {
+    font-size: 18px;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  /* ——— Footer ——— */
+  footer p {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  footer {
+    background-color: #343735;
+    margin-top: 5rem;
+  }
